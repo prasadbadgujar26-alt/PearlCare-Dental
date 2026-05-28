@@ -40,6 +40,7 @@
     }
 
     .stat-badge {
+       width: 6.0rm;
       /* height: 5.0rem; */
       background: rgba(255,255,255,0.90);
       backdrop-filter: blur(12px);
