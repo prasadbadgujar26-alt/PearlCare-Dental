@@ -47,6 +47,21 @@
       border: 1px solid rgba(13,148,136,0.18);
     }
 
+.card-container {
+  display: flex;            /* Turns on Flexbox layout */
+  flex-direction: row;      /* Arranges items horizontally (default) */
+  flex-wrap: nowrap;        /* Forces all items to stay in ONE line */
+  gap: 16px;                /* Adds spacing between the cards */
+  
+  /* Optional: Adds scrollbar if cards overflow screen width on mobile */
+  overflow-x: auto;         
+}
+
+.card {
+  flex-shrink: 0;           /* Prevents the cards from squishing/shrinking */
+  width: 200px;             /* Sets a fixed size for the cards */
+}
+
     .service-card {
       transition: transform .3s ease, box-shadow .3s ease;
       border: 1px solid rgba(13,148,136,0.10);
