@@ -115,6 +115,17 @@
       border-radius:60% 40% 70% 30%/40% 60% 30% 70%;
     }
 
+.social-links { margin-bottom: 20px; display: flex; gap: 10px; }
+.social-btn {
+
+  width: 36px; height: 36px; border-radius: 8px;
+  background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.6);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; text-decoration: none;
+  transition: all 0.2s;
+}
+.social-btn:hover { background: var(--teal); color: white; }
+
     @media (max-width: 640px) {
       .hero-h1 { font-size: clamp(2.4rem, 10vw, 3.5rem) !important; line-height: 1.1 !important; }
       .stats-row { gap: 0.5rem; }
