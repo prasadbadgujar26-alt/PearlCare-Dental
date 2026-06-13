@@ -62,6 +62,69 @@
   width: 200px;             /* Sets a fixed size for the cards */
 }
 
+/* ===========================
+   Smile Transformations
+=========================== */
+
+.transformations-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+  gap:28px;
+}
+
+.transformation-card{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid rgba(13,148,136,0.12);
+  box-shadow:0 8px 30px rgba(13,148,136,0.08);
+  transition:.35s ease;
+}
+
+.transformation-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 18px 45px rgba(13,148,136,0.18);
+}
+
+/* Rectangular Image */
+.transformation-card img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  display:block;
+}
+
+/* Content */
+.transformation-content{
+  padding:24px;
+}
+
+.transformation-content h3{
+  font-family:'Cormorant Garamond', serif;
+  font-size:2rem;
+  font-weight:700;
+  color:#1e293b;
+  margin-bottom:10px;
+}
+
+.transformation-content p{
+  color:#64748b;
+  line-height:1.7;
+  font-size:15px;
+}
+
+/* Mobile */
+@media(max-width:640px){
+
+  .transformations-grid{
+    grid-template-columns:1fr;
+  }
+
+  .transformation-card img{
+    aspect-ratio:4/3;
+  }
+}
+
     .service-card {
       transition: transform .3s ease, box-shadow .3s ease;
       border: 1px solid rgba(13,148,136,0.10);
